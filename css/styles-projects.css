@@ -1,0 +1,232 @@
+:root {
+
+    /* Colors */
+    --first-dark-color: #1d1d20;
+    --second-black-dark-color: rgba(15,23,42,255);
+    --second-black-dark-rgba-color: rgba(15,23,42,.75);
+    --second-blue-dark-color: rgba(17,30,63,255);
+    --third-blue-dark-color: rgba(19,45,68,255);
+
+    --first-white-text-color: rgba(226,232,240,255);
+    --first-white-alpha-text-color: #d2d8d7;
+    --second-gray-text-color: rgba(134,148,169,255);
+    --third-green-text-color: rgba(63,156,156,255);
+    --fourth-green-text-color: #53cfbe;
+
+    --first-gray-icons-color: #94a3b8;
+
+    --box-shadow: #00000025;
+
+    /* Fonts */
+    --primary-font: 'Rubik', sans-serif;
+
+    /* Measures */
+
+    --max-width: 1280px;
+    --header-height: 80px;
+
+}
+
+.ap-container {
+    max-width: var(--max-width);
+    height: auto;
+    padding: 4rem 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ap-start {
+    width: 100%;
+    margin-bottom: 3rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.ap-back {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.ap-back a {
+    color: var(--fourth-green-text-color);
+}
+
+.ap-back i {
+    margin-right: 1rem;
+    color: var(--fourth-green-text-color);
+    transition: transform .5s ease;
+}
+
+.ap-back a:hover i {
+    transform: translateX(-.5rem);
+}
+
+.ap-title {
+    padding: 0;
+    margin: 2rem 0 0 0;
+}
+
+.ap-title h1 {
+    font-weight: 700;
+    color: var(--first-white-text-color);
+    font-size: clamp(1.375rem, 0.9583rem + 2.0833vw, 2rem);
+}
+
+.ap-table {
+    width: 100%;
+    height: auto;
+}
+
+.ap-table .table {
+    width: 100%;
+    height: auto;
+}
+
+.ap-table .table .theader {
+    width: 100%;
+    height: 3rem;
+}
+
+.ap-table .table .theader tr {
+    color: var(--first-white-text-color);
+    font-weight: 700;
+    font-size: 1.15rem;
+
+    width: 100%;
+    height: inherit;
+}
+
+.ap-table .table thead tr th {
+    height: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(203, 213, 225, .1);
+}
+
+.ap-table .table .tbody {
+    width: 100%;
+    height: 3rem;
+}
+
+.ap-table .table .tbody tr {
+    width: 100%;
+    height: inherit;
+}
+
+.ap-table .table .tbody tr td {
+    width: auto;
+    height: inherit;
+
+    border-bottom: 1px solid rgba(203, 213, 225, .1)
+}
+
+.ap-table .table .tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.ap-table .table .tbody tr td p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    height: inherit;
+
+    color: var(--second-gray-text-color);
+}
+
+.ap-table .table .tbody tr td p a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: 1px solid var(--third-green-text-color);
+    
+    color: var(--first-white-alpha-text-color);
+}
+
+.ap-table .table .tbody tr td p i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--first-white-alpha-text-color);
+    
+    margin-left: .5rem;
+    
+    transform: rotate(-45deg);
+}
+
+.ap-table .table th:nth-child(3),
+.ap-table .table td:nth-child(3),
+.ap-table .table th:nth-child(4),
+.ap-table .table td:nth-child(4),
+.ap-table .table th:nth-child(5),
+.ap-table .table td:nth-child(5),
+.ap-table .table th:nth-child(6),
+.ap-table .table td:nth-child(6) {
+    display: none;
+}
+
+@media (640px <=width < 1024px) { 
+    /* 3 columnas año- nombre- link*/
+    .ap-table .table td:nth-child(2) {
+        display: none;
+    }
+
+    .ap-table .table td:nth-child(3) {
+        display: table-cell;
+    }
+
+    .ap-table .table th:nth-child(5) {
+        display: table-cell;
+    }
+
+    .ap-table .table td:nth-child(6) {
+        display: table-cell;
+    }
+    
+}
+
+@media (1024px <= width) {
+    /* 5 columnas */
+    .ap-table .table td:nth-child(2) {
+        display: none;
+    }
+
+    .ap-table .table th:nth-child(3),
+    .ap-table .table td:nth-child(3),
+    .ap-table .table th:nth-child(4),
+    .ap-table .table td:nth-child(4),
+    .ap-table .table th:nth-child(5),
+    .ap-table .table td:nth-child(5),
+    .ap-table .table td:nth-child(6){
+        display: table-cell;
+    }
+
+    .ap-table .table th:nth-child(4),
+    .ap-table .table td:nth-child(5) {
+        width: 350px;
+
+        padding: 1rem;
+    }
+    
+    .ap-table-tecnologies span {
+        background-color: var(--third-blue-dark-color);
+        color: var(--fourth-green-text-color);
+    
+        border-radius: 1rem;
+        padding: .5rem;
+        margin-right: .5rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        width: auto;
+
+        display: inline-block;
+    }
+}
