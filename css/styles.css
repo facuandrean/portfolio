@@ -150,7 +150,8 @@ button:hover {
 .presentation {
     width: 100%;
     height: auto;
-    padding: 1.5rem;
+
+    padding: 1rem;
 }
 
 .present {
@@ -172,7 +173,7 @@ button:hover {
 .present .profession {
     color: var(--first-white-alpha-text-color);
     font-weight: 500;
-    font-size: clamp(1.625rem, 1.2917rem + 1.6667vw, 2.625rem);
+    font-size: clamp(1.25rem, 1.0833rem + 0.8333vw, 1.75rem);
 
     margin-bottom: 1rem;
 }
@@ -180,7 +181,7 @@ button:hover {
 .present .description {
     color: var(--second-gray-text-color);
     font-weight: 400;
-    font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem);
+    font-size: 1.15rem
 }
 
 .scroll-spy {
@@ -206,12 +207,13 @@ button:hover {
 }
 
 .about,
+.experience,
 .skills,
 .projects,
 .contact-me {
     width: 100%;
     height: auto;
-    padding: 1.5rem;
+    padding: 1rem;
 
     margin-top: 7rem;
 }
@@ -273,6 +275,167 @@ button:hover {
     color: white;
 }
 
+.projects-container,
+.jobs-container {
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+.project-card,
+.job-card {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 4rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: border .5s ease;
+}
+
+.project-card:hover,
+.job-card:hover {
+    border: 2px solid var(--third-green-text-color);
+    -webkit-box-shadow: 0px 0px 10px 0px var(--first-gray-icons-color);
+    -moz-box-shadow: 0px 0px 10px 0px var(--first-gray-icons-color);
+    box-shadow: 0px 0px 10px 0px var(--first-gray-icons-color);
+    opacity: .8;
+}
+
+.job-time {
+    font-weight: 500;
+    color: var(--second-gray-text-color);
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.job-title {
+    font-weight: 500;
+    color: var(--first-white-text-color);
+    font-size: 1.45rem;
+    margin-bottom: .5rem;
+}
+
+.job-position {
+    font-weight: 500;
+    color: var(--first-white-alpha-text-color);
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.job-description {
+    color: var(--second-gray-text-color);
+    font-size: 1.15rem;
+    padding: .5rem 0rem;
+    margin-bottom: 1rem;
+}
+
+.project-tecnologies,
+.job-tecnologies {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-tecnologies {
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.project-tecnologies span, 
+.job-tecnologies span {
+    background-color: var(--third-blue-dark-color);
+    padding: .4rem;
+    border-radius: 1rem;
+    width: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: .25rem;
+
+    color: var(--fourth-green-text-color);
+    font-size: 1rem
+}
+
+.text-card {
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    padding: .8rem 0rem;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.project-title h3 {
+    font-weight: 500;
+    color: var(--first-white-text-color);
+    font-size: 1.25rem;
+}
+
+.project-title i {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    transition: transform .5s ease;
+}
+
+.project-card:hover h3 {
+    color: var(--fourth-green-text-color);
+}
+
+.project-card:hover i {
+    transform: rotate(45deg);
+}
+
+.project-description {
+    color: var(--second-gray-text-color);
+    font-size: 1.15rem;
+    padding: .5rem 0rem;
+}
+
+.project-description b {
+    color: var(--first-white-alpha-text-color);
+    font-weight: 500;
+}
+
+.project-img {
+    width: 100%;
+    height: 5rem;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.more-projects {
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+.more-projects a {
+    color: var(--first-white-text-color);
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--third-green-text-color);
+}
+
+.more-projects i {
+    font-size: 1.2rem;
+    transform: rotate(45deg);
+}
+
 .skills-container {
     width: 100%;
     padding: 2rem 0rem;
@@ -311,128 +474,6 @@ button:hover {
 .skills-skill p {
     color: var(--first-gray-icons-color);
     text-align: center;
-}
-
-.projects-container {
-    width: 100%;
-    padding: 2rem 0rem;
-}
-
-.project-card {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 4rem;
-    border: 2px solid transparent;
-    border-radius: 1rem;
-    padding: 0rem .5rem;
-}
-
-.project-card:hover {
-    border: 2px solid var(--third-green-text-color);
-    -webkit-box-shadow: 0px 0px 10px 0px var(--first-gray-icons-color);
-    -moz-box-shadow: 0px 0px 10px 0px var(--first-gray-icons-color);
-    box-shadow: 0px 0px 10px 0px var(--first-gray-icons-color);
-}
-
-.text-card {
-    width: 100%;
-    height: auto;
-}
-
-.project-title {
-    padding: .8rem 0rem;
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.project-title h3 {
-    font-weight: 500;
-    color: var(--first-white-text-color);
-    font-size: 1.25rem;
-}
-
-.project-title i {
-    margin-left: 1rem;
-    font-size: 1.25rem;
-    transition: transform .5s ease;
-}
-
-.project-card:hover h3 {
-    color: var(--fourth-green-text-color);
-}
-
-.project-card:hover i {
-    transform: rotate(45deg);
-}
-
-.project-description {
-    color: var(--second-gray-text-color);
-    font-size: 1.1rem;
-    padding: .5rem 0rem;
-    margin-bottom: 1rem;
-}
-
-.project-description b {
-    color: var(--first-white-alpha-text-color);
-    font-weight: 500;
-}
-
-.project-tecnologies {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.5rem;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project-tecnologies span {
-    background-color: var(--third-blue-dark-color);
-    padding: .5rem;
-    border-radius: 1rem;
-    width: auto;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-right: .5rem;
-
-    color: var(--fourth-green-text-color);
-}
-
-.project-img {
-    width: 100%;
-    height: 5rem;
-}
-
-.project-img img {
-    width: 100%;
-    max-width: 600px;
-    min-height: 200px;
-    border-radius: 1rem;
-    margin-bottom: .5rem;
-
-    object-fit: cover;
-    object-position: 50% 50%;
-}
-
-.more-projects {
-    width: 100%;
-    padding: 0rem 1rem;
-}
-
-.more-projects a {
-    color: var(--first-white-text-color);
-    font-size: 1.2rem;
-    border-bottom: 1px solid var(--third-green-text-color);
-}
-
-.more-projects i {
-    font-size: 1.2rem;
-    transform: rotate(45deg);
 }
 
 .contact-me {
@@ -497,6 +538,7 @@ button:hover {
     color: var(--first-gray-icons-color);
     text-align: center;
     line-height: 3ch;
+    font-size: .85rem;
 }
 
 .credits a {
@@ -516,7 +558,7 @@ button:hover {
 
 /* Mediaqueries */
 
-@media (640px <=width < 1080px) {
+@media (640px <=width < 1024px) {
 
     .main {
         max-width: 800px;
@@ -533,6 +575,11 @@ button:hover {
     
     .present .name {
         margin-bottom: 1rem;
+    }
+
+    .present .description {
+        /* font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem); */
+        font-size: 1.35rem;
     }
     
     .present .profession {
@@ -552,13 +599,38 @@ button:hover {
     }
 
     .about p {
-        font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem);
+        font-size: 1.3rem;
     }
 
     .btn-cv {
         font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem);
     }
-    
+
+    .job-time {
+        font-size: 1.2rem;
+    }
+
+    .job-title {
+        font-weight: 500;
+        color: var(--first-white-text-color);
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+
+    .job-position {
+        font-size: 1.45rem;
+    }
+
+    .job-description {
+        font-size: 1.3rem;
+    }
+
+    .project-tecnologies span, 
+    .job-tecnologies span {
+        font-size: 1.3rem;
+        padding: .5rem
+    }
+
     .skills-skill-imgs {
         width: 7rem;
         height: 7rem;
@@ -573,19 +645,15 @@ button:hover {
     }
     
     .project-title h3 {
-        font-size: clamp(1.375rem, 0.9583rem + 2.0833vw, 2rem);
+        font-size: 1.5rem;
     }
     
     .project-title i {
-        font-size: clamp(1.375rem, 0.9583rem + 2.0833vw, 2rem);
+        font-size: 1.5rem;
     }
     
     .project-description {
-        font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem);
-    }
-    
-    .project-tecnologies span {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .project-img img {
@@ -654,7 +722,7 @@ button:hover {
 }
 
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width:1024px) {
 
     .radial-background-mobile {
         display: none;
@@ -714,9 +782,9 @@ button:hover {
         font-size: 1.85rem;
     }
     
-    .present .description {
+    /* .present .description {
         font-size: 1.25rem;
-    }
+    } */
 
     .scroll-spy {
         width: 100%;
@@ -778,6 +846,7 @@ button:hover {
     }
 
     .about,
+    .experience,
     .skills,
     .projects,
     .contact-me {
@@ -800,6 +869,10 @@ button:hover {
         margin-top: 2.5rem;
     }
     
+    .experience {
+        margin-top: 7rem;
+    }
+
     .skills-container {
         margin-top: 7rem;
     }

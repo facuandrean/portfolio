@@ -30,7 +30,7 @@
 .ap-container {
     max-width: var(--max-width);
     height: auto;
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
 
     display: flex;
     justify-content: center;
@@ -120,8 +120,8 @@
 .ap-table .table .tbody tr td {
     width: auto;
     height: inherit;
-
-    border-bottom: 1px solid rgba(203, 213, 225, .1)
+    
+    border-bottom: 1px solid rgba(203, 213, 225, .1);
 }
 
 .ap-table .table .tbody tr:last-child td {
@@ -169,34 +169,50 @@
 .ap-table .table th:nth-child(5),
 .ap-table .table td:nth-child(5),
 .ap-table .table th:nth-child(6),
-.ap-table .table td:nth-child(6) {
+.ap-table .table td:nth-child(6),
+.ap-table .table th:nth-child(7),
+.ap-table .table td:nth-child(7) {
     display: none;
 }
 
 @media (640px <=width < 1024px) { 
-    /* 3 columnas año- nombre- link*/
-    .ap-table .table td:nth-child(2) {
-        display: none;
+
+    .ap-table .table td {
+        padding: 2.5rem 0rem;
     }
 
-    .ap-table .table td:nth-child(3) {
+    .ap-table .table td:nth-child(2),
+    .ap-table .table th:nth-child(2) {
+        max-width: 12ch;
+        padding: .25rem;
+
+        font-size: 1rem;
+    }
+
+    .ap-table .table td:nth-child(4),
+    .ap-table .table th:nth-child(3) {
         display: table-cell;
+
+        min-width: 12.5ch;
+        max-width: 15ch;
+        padding: .25rem;
     }
 
-    .ap-table .table th:nth-child(5) {
-        display: table-cell;
-    }
-
+    .ap-table .table th:nth-child(5),
     .ap-table .table td:nth-child(6) {
-        display: table-cell;
+        display: none;
     }
     
 }
 
 @media (1024px <= width) {
-    /* 5 columnas */
     .ap-table .table td:nth-child(2) {
         display: none;
+    }
+
+    .ap-table .table th:nth-child(1),
+    .ap-table .table td:nth-child(1) {
+        max-width: 8ch;
     }
 
     .ap-table .table th:nth-child(3),
@@ -205,15 +221,31 @@
     .ap-table .table td:nth-child(4),
     .ap-table .table th:nth-child(5),
     .ap-table .table td:nth-child(5),
-    .ap-table .table td:nth-child(6){
+    .ap-table .table td:nth-child(6),
+    .ap-table .table th:nth-child(6),
+    .ap-table .table td:nth-child(7),
+    .ap-table .table th:nth-child(7) {
         display: table-cell;
+        padding: .5rem;
     }
 
-    .ap-table .table th:nth-child(4),
-    .ap-table .table td:nth-child(5) {
-        width: 350px;
+    .ap-table .table th:nth-child(3),
+    .ap-table .table td:nth-child(3) {
+        max-width: 8ch;
+    }
 
-        padding: 1rem;
+    .ap-table .table th:nth-child(3),
+    .ap-table .table td:nth-child(4) {
+        max-width: 70ch;
+    }
+
+    .ap-table .table td:nth-child(4) {
+        padding: 3rem .5rem;
+    }
+
+    .ap-table .table th:nth-child(5),
+    .ap-table .table td:nth-child(6) {
+        max-width: 50ch;
     }
     
     .ap-table-tecnologies span {
@@ -222,9 +254,9 @@
     
         border-radius: 1rem;
         padding: .5rem;
-        margin-right: .5rem;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        margin-right: .25rem;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
         width: auto;
 
         display: inline-block;
