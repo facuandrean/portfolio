@@ -122,6 +122,20 @@ button:hover {
     opacity: .8;
 }
 
+/* Animtations */
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
 /* Site properties */
 
 .main {
@@ -216,6 +230,15 @@ button:hover {
     padding: 1rem;
 
     margin-top: 7rem;
+
+    view-timeline-name: --section;
+    view-timeline-axis: block; 
+
+    animation-timeline: --section;
+    animation-name: show;
+
+    animation-range: entry 0% cover 40%;
+    animation-fill-mode: both;
 }
 
 .about {
@@ -272,7 +295,7 @@ button:hover {
     box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow);
 
     font-weight: 700;
-    color: white;
+    color: var(--second-black-dark-color);
 }
 
 .projects-container,
@@ -291,6 +314,10 @@ button:hover {
     border-radius: 1rem;
     padding: 1rem;
     transition: border .5s ease;
+}
+
+.job-card:last-child {
+    margin-bottom: 0;
 }
 
 .project-card:hover,
@@ -543,6 +570,7 @@ button:hover {
 
 .credits a {
     color: var(--first-white-alpha-text-color);
+    font-weight: bold;
 }
 
 .credits a:hover {
@@ -865,7 +893,6 @@ button:hover {
     }
 
     .btn-cv {
-        color: var(--first-white-alpha-text-color);
         margin-top: 2.5rem;
     }
     
