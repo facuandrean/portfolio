@@ -1,6 +1,6 @@
 export function scrollSpy() {
 
-    const sections = document.querySelectorAll(".section");
+    const sections = document.querySelectorAll(".scroll-spy-section");
     const navbarLinks = document.querySelectorAll(".scroll-spy a");
   
     window.addEventListener("scroll", function() {
@@ -19,7 +19,6 @@ export function scrollSpy() {
             if (sectionTop <= window.innerHeight * scroll) {
                 current = section.getAttribute("id");
             }
-
         });
     
         navbarLinks.forEach(link => {

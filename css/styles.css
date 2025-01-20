@@ -229,8 +229,6 @@ button:hover {
     height: auto;
     padding: 1rem;
 
-    margin-top: 7rem;
-
     view-timeline-name: --section;
     view-timeline-axis: block; 
 
@@ -239,6 +237,13 @@ button:hover {
 
     animation-range: entry 0% cover 40%;
     animation-fill-mode: both;
+}
+
+#experience,
+#skills,
+#projects,
+#contact-me {
+    padding-top: 5rem;
 }
 
 .about {
@@ -301,7 +306,6 @@ button:hover {
 .projects-container,
 .jobs-container {
     width: 100%;
-    padding: 2rem 0rem;
 }
 
 .project-card,
@@ -606,7 +610,6 @@ button:hover {
     }
 
     .present .description {
-        /* font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem); */
         font-size: 1.35rem;
     }
     
@@ -810,10 +813,6 @@ button:hover {
         font-size: 1.85rem;
     }
     
-    /* .present .description {
-        font-size: 1.25rem;
-    } */
-
     .scroll-spy {
         width: 100%;
         padding: 0rem;
@@ -896,14 +895,6 @@ button:hover {
         margin-top: 2.5rem;
     }
     
-    .experience {
-        margin-top: 7rem;
-    }
-
-    .skills-container {
-        margin-top: 7rem;
-    }
-
     .skills-skill-imgs {
         width: 4rem;
         height: 4rem;
@@ -911,7 +902,6 @@ button:hover {
     
     .projects-container {
         padding: 0rem 0rem;
-        margin-top: 7rem;
     }
     
     .project-card {
