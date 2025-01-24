@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (innerWidth > 420) {
         radialBackground();
     }
-
 })
 
+document.getElementById('btn-cv').addEventListener('click', () => {
+    window.open('assets/archives/Facundo_Andrean_Desarrollador_Web_FullStack_Curriculum_Vitae.pdf', '_blank');
+});

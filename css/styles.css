@@ -444,6 +444,7 @@ button:hover {
     width: 100%;
     max-width: 600px;
     min-height: 200px;
+    height: 200px;
     border-radius: 1rem;
     margin-bottom: .5rem;
 
@@ -689,6 +690,8 @@ button:hover {
     
     .project-img img {
         margin: 0 auto;
+
+        height: 400px;
     }
     
     .more-projects a {
@@ -701,27 +704,6 @@ button:hover {
     
     .contact-me h2 {
         margin-bottom: 5rem;
-    }
-    
-    .contact-cards {
-        width: 100%;
-        height: auto;
-    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .contact-card {
-        width: 220px;
-        padding: 1rem;
-        margin-bottom: 0;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     
     .contact-card img {
@@ -892,7 +874,7 @@ button:hover {
     }
 
     .btn-cv {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
     }
     
     .skills-skill-imgs {
@@ -963,6 +945,25 @@ button:hover {
     
     .contact-cards {
         flex-direction: row;
+
+        height: 10rem;
+        padding: 1rem 0rem;
+    }
+
+    .contact-card {
+        height: auto;
+
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .contact-card:last-child {
+        min-width: 120px;
+    }
+    
+    .contact-card:last-child small {
+        display: block;
+        word-break: break-all;
     }
 
     .credits {
