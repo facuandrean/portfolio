@@ -455,6 +455,7 @@ button:hover {
 .more-projects {
     width: 100%;
     padding: 0rem 1rem;
+    margin-bottom: .5rem;
 }
 
 .more-projects a {
@@ -876,7 +877,7 @@ button:hover {
     .btn-cv {
         margin-top: 2rem;
     }
-    
+
     .skills-skill-imgs {
         width: 4rem;
         height: 4rem;
@@ -932,10 +933,20 @@ button:hover {
         height: 80%;
         margin-bottom: 0;
     }
-    
-    .contact-me {
+
+    .skills {
         height: auto;
         padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-me {
+        height: auto;
+        padding-top: 0rem;
         padding-bottom: 10rem;
 
         display: flex;
