@@ -4,15 +4,15 @@
 
     /* Colors */
     --first-dark-color: #1d1d20;
-    --second-black-dark-color: rgba(15,23,42,255);
-    --second-black-dark-rgba-color: rgba(15,23,42,.75);
-    --second-blue-dark-color: rgba(17,30,63,255);
-    --third-blue-dark-color: rgba(19,45,68,255);
+    --second-black-dark-color: rgba(15, 23, 42, 255);
+    --second-black-dark-rgba-color: rgba(15, 23, 42, .75);
+    --second-blue-dark-color: rgba(17, 30, 63, 255);
+    --third-blue-dark-color: rgba(19, 45, 68, 255);
 
-    --first-white-text-color: rgba(226,232,240,255);
+    --first-white-text-color: rgba(226, 232, 240, 255);
     --first-white-alpha-text-color: #d2d8d7;
-    --second-gray-text-color: rgba(134,148,169,255);
-    --third-green-text-color: rgba(63,156,156,255);
+    --second-gray-text-color: rgba(134, 148, 169, 255);
+    --third-green-text-color: rgba(63, 156, 156, 255);
     --fourth-green-text-color: #53cfbe;
 
     --first-gray-icons-color: #94a3b8;
@@ -113,7 +113,8 @@ li {
     list-style: none;
 }
 
-button, input {
+button,
+input {
     outline: none;
     transition: opacity .5s ease-out;
 }
@@ -230,13 +231,20 @@ button:hover {
     padding: 1rem;
 
     view-timeline-name: --section;
-    view-timeline-axis: block; 
+    view-timeline-axis: block;
 
     animation-timeline: --section;
     animation-name: show;
 
     animation-range: entry 0% cover 40%;
     animation-fill-mode: both;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #experience,
@@ -259,7 +267,7 @@ button:hover {
     top: 0;
     left: 0;
     z-index: 999;
-    
+
     color: var(--first-white-text-color);
     font-weight: 500;
     font-size: 1.35rem;
@@ -287,7 +295,7 @@ button:hover {
 }
 
 .about p b {
-    color: var(--first-white-text-color); 
+    color: var(--first-white-text-color);
     font-weight: 400;
 }
 
@@ -375,13 +383,13 @@ button:hover {
     margin: 0rem 0rem 1rem 0rem;
 }
 
-.project-tecnologies span, 
+.project-tecnologies span,
 .job-tecnologies span {
     background-color: var(--third-blue-dark-color);
     padding: .4rem;
     border-radius: 1rem;
     width: auto;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,6 +486,36 @@ button:hover {
     grid-gap: 15px;
 }
 
+.future-skills-container {
+    width: 100%;
+    padding: 2rem 0rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, 100px, 1fr);
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-areas:
+        "h3 h3"
+        "skill1 skill2";
+    grid-gap: 15px;
+}
+
+.future-skills-container .future-skills-title {
+    color: var(--first-white-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+    grid-area: h3;
+}
+
+.future-skills-container .skills-skill:nth-child(1) {
+    grid-area: skill1;
+}
+
+.future-skills-container .skills-skill:nth-child(2) {
+    grid-area: skill2;
+}
+
 .skills-skill {
     display: flex;
     flex-direction: column;
@@ -545,7 +583,7 @@ button:hover {
 }
 
 .contact-card h5 {
-    color:  var(--first-white-text-color);
+    color: var(--first-white-text-color);
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: .5rem;
@@ -554,7 +592,7 @@ button:hover {
 .contact-card a,
 .contact-card small {
     font-size: 1rem;
-    color:  #94a3b8;
+    color: #94a3b8;
     text-align: center;
     text-wrap: pretty;
 }
@@ -599,14 +637,14 @@ button:hover {
         margin: 2.5rem auto 0 auto;
     }
 
-    .radial-background-mobile {    
+    .radial-background-mobile {
         background: radial-gradient(650px circle at 0px 0px, rgba(29, 78, 216, 0.15), transparent 80%);
     }
-    
+
     .present {
         padding: 0rem 0 2rem 0;
     }
-    
+
     .present .name {
         margin-bottom: 1rem;
     }
@@ -614,11 +652,11 @@ button:hover {
     .present .description {
         font-size: 1.35rem;
     }
-    
+
     .present .profession {
         margin-bottom: 1.5rem;
     }
-    
+
     .social-media a {
         width: 50px;
         height: 50px;
@@ -658,7 +696,7 @@ button:hover {
         font-size: 1.3rem;
     }
 
-    .project-tecnologies span, 
+    .project-tecnologies span,
     .job-tecnologies span {
         font-size: 1.3rem;
         padding: .5rem
@@ -668,33 +706,33 @@ button:hover {
         width: 7rem;
         height: 7rem;
     }
-    
+
     .skills-skill p {
         font-size: 1.35rem;
     }
-    
+
     .project-card {
         padding: 1rem 1.5rem;
     }
-    
+
     .project-title h3 {
         font-size: 1.5rem;
     }
-    
+
     .project-title i {
         font-size: 1.5rem;
     }
-    
+
     .project-description {
         font-size: 1.3rem;
     }
-    
+
     .project-img img {
         margin: 0 auto;
 
         height: 400px;
     }
-    
+
     .more-projects a {
         font-size: clamp(1.125rem, 0.8333rem + 1.4583vw, 2rem);
     }
@@ -702,25 +740,25 @@ button:hover {
     .contact-me {
         margin-bottom: 5rem;
     }
-    
+
     .contact-me h2 {
         margin-bottom: 5rem;
     }
-    
+
     .contact-card img {
         width: 5rem;
         height: 5rem;
         margin-bottom: 1rem;
     }
-    
+
     .contact-card h5 {
-        color:  var(--first-white-text-color);
+        color: var(--first-white-text-color);
         font-size: 1.4rem;
         font-weight: 500;
         margin-bottom: .5rem;
-    
+
     }
-    
+
     .contact-card a,
     .contact-card small {
         font-size: 1.2rem;
@@ -728,11 +766,11 @@ button:hover {
         width: 100%;
         display: block;
         word-break: break-all;
-        color:  #94a3b8;
+        color: #94a3b8;
         text-align: center;
-        
+
     }
-    
+
 }
 
 
@@ -753,8 +791,8 @@ button:hover {
         width: 100%;
         height: 100%;
         pointer-events: none;
-    } 
-    
+    }
+
     main {
         max-width: 1280px;
         margin: 0 auto;
@@ -771,7 +809,7 @@ button:hover {
         margin: 0;
 
         position: fixed;
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -790,12 +828,12 @@ button:hover {
     .present .name a {
         font-size: 2.5rem;
     }
-    
+
     .present .profession {
         font-weight: 600;
         font-size: 1.85rem;
     }
-    
+
     .scroll-spy {
         width: 100%;
         padding: 0rem;
@@ -806,12 +844,12 @@ button:hover {
         justify-content: center;
     }
 
-    .scroll-spy > div {
+    .scroll-spy>div {
         width: 100%;
         padding: .5rem 1rem;
     }
-    
-    .scroll-spy > div:nth-child(4) {
+
+    .scroll-spy>div:nth-child(4) {
         margin: 0;
     }
 
@@ -823,7 +861,7 @@ button:hover {
         align-items: center;
     }
 
-    .scroll-spy > div div {
+    .scroll-spy>div div {
         display: inline-block;
         width: 3ch;
         border: 1px solid var(--first-white-text-color);
@@ -843,7 +881,7 @@ button:hover {
         width: 45px;
         height: 45px;
     }
-    
+
     .information {
         width: calc(100% - 500px);
         padding: 6.25rem 2rem;
@@ -882,18 +920,18 @@ button:hover {
         width: 4rem;
         height: 4rem;
     }
-    
+
     .projects-container {
         padding: 0rem 0rem;
     }
-    
+
     .project-card {
         height: 300px;
         padding: 1rem;
 
         display: flex;
     }
-    
+
     .text-card {
         width: 60%;
         height: 100%;
@@ -903,7 +941,7 @@ button:hover {
         align-items: center;
         flex-direction: column;
     }
-    
+
     .project-title h3 {
         text-align: center;
     }
@@ -913,11 +951,11 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-    
+
     .project-tecnologies span {
         font-size: .9rem;
     }
-    
+
     .project-img {
         width: 40%;
         height: 100%;
@@ -928,10 +966,14 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-    
+
     .project-img img {
         height: 80%;
         margin-bottom: 0;
+    }
+
+    .future-skills-container {
+        grid-template-columns: repeat(2, minmax(150px, 180px));
     }
 
     .skills {
@@ -953,7 +995,7 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-    
+
     .contact-cards {
         flex-direction: row;
 
@@ -967,11 +1009,11 @@ button:hover {
         padding-bottom: 0;
         margin-bottom: 0;
     }
-    
+
     .contact-card:last-child {
         min-width: 120px;
     }
-    
+
     .contact-card:last-child small {
         display: block;
         word-break: break-all;
