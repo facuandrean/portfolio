@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.getElementById('btn-cv').addEventListener('click', () => {
-    window.open('assets/archives/Facundo_Andrean_Desarrollador_Web_FullStack_Curriculum_Vitae.pdf', '_blank');
+    window.open('assets/archives/Facundo_Andrean_Curriculum_Vitae.pdf', '_blank');
 });
