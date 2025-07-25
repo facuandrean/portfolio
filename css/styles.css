@@ -978,8 +978,8 @@ button:hover {
 
     .skills {
         height: auto;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        /* padding-top: 10rem;
+        padding-bottom: 10rem; */
 
         display: flex;
         justify-content: center;
